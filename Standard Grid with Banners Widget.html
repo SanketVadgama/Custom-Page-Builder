@@ -1,0 +1,232 @@
+<style>
+.quickIntroColumn {
+display: flex;
+width: 50%;
+min-height: 200px;
+}
+.colLeft {
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+.colRight {
+flex-wrap: wrap;
+}
+.quickIntroItem {
+width: 50%;
+position: relative;
+}
+.quickIntroItem1 {
+width: 100%;
+}
+.quickIntro .quickIntroLink {
+flex-shrink: 0;
+flex-grow: 1;
+margin: 3px 0;
+width: 100%;
+}
+.quickIntro .quickIntroImage {
+position: static;
+overflow: hidden;
+}
+.quickIntro .quickIntroImage .img-cover {
+transition: all 250ms cubic-bezier(.335, .015, .46, .995);
+}
+.quickIntro .quickIntroLink:hover .img-cover {
+transform: scale(1.03);
+}
+.quickIntro .quickIntroText {
+background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+position: absolute;
+width: 100%;
+padding: 50px 0 35px 35px;
+margin: auto;
+bottom: 0;
+text-align: left;
+}
+.quickIntro .quickIntroLink .btn-cta {
+background-color: transparent;
+border-color: #fff;
+color: #fff;
+padding: 7px 15px 10px;
+}
+.quickIntro .quickIntroLink:hover .btn-cta,
+.quickIntro .quickIntroLink:focus .btn-cta {
+background-color: #fff;
+border-color: #fff;
+color: #222;
+}
+#myVideo {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('VIDEOPATH.jpg') no-repeat;
+background-size: cover;
+}
+.quickIntroItem1 .carousel-inner>.item>a>img,
+.quickIntroItem1 .carousel-inner>.item>img {
+width: 100%;
+height: auto;
+}
+.carousel-inner>.item>a>picture>img,
+.carousel-inner>.item>picture>img {
+width: 100%;
+}
+#homepageSearchWidgetCosmos {
+margin-top: 20px;
+}
+.shop-by-vehicle__header .header__label--line-one {
+font-size: 36px; /*text-transform: uppercase;*/ } .shop-by-vehicle .search-nav__btn--short,
+.search-by-filter__search-button,
+.search-by-filter__reset-button,
+.search-by-keyword #opensearch-submit,
+.search-by-budget__search-button,
+.search-by-budget__reset-button {
+font-weight: normal !important;
+}
+@media (min-width: 992px) {
+.quickIntro {
+background: var(--main-color);
+position: relative;
+z-index: 0;
+}
+.videoContent {
+position: relative;
+z-index: 2;
+padding: 0 15px 25px;
+width: 100%;
+}
+#videoOverlay {
+width: 100%;
+height: 100%;
+top: 0;
+background: rgba(0, 0, 0, 0.3);
+position: absolute;
+z-index: 1;
+}
+.quickIntroItem {
+border-left: 4px solid #fff;
+}
+.quickIntroItem1,
+.bannerSec {
+border-bottom: 4px solid #fff;
+}
+}
+@media (min-width: 1400px) {
+.videoContent {
+padding: 0 4em;
+}
+}
+@media (max-width: 991px) {
+#myVideo {
+display: none;
+}
+.quickIntro {
+flex-wrap: wrap;
+flex-direction: column-reverse;
+}
+.quickIntroColumn.colLeft {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('VIDEOPATH.jpg') no-repeat center / cover;
+border-top: 4px solid #fff;
+}
+.quickIntroColumn {
+display: flex;
+width: 100%;
+min-height: 100px;
+align-items: center;
+}
+.videoContent {
+width: 100%;
+padding: 30px 15px;
+}
+.quickIntro .quickIntroText {
+text-align: center;
+padding: 50px 15px 35px;
+}
+.quickIntroItem {
+border-top: 4px solid #fff;
+}
+.quickIntroItem1 {
+border-top: 0;
+}
+.quickIntroItem3 {
+border-left: 4px solid #fff;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.colRight {
+flex-wrap: wrap;
+}
+.quickIntroItem {
+width: 50%;
+}
+.quickIntroItem1 {
+width: 100%;
+}
+}
+@media (max-width: 767px) {
+.videoContent {
+padding: 15px 15px;
+}
+.quickIntro .quickIntroLink .btn-cta {
+font-size: 12px;
+}
+}
+</style>
+
+<div class="quickIntro flex-all">
+<div class="quickIntroColumn colLeft">
+<div id="videoOverlay"></div>
+<video id="myVideo" autoplay="" loop="" muted="" poster="VIDEOPATH.jpg">
+<source src="VIDEOPATH.mp4" type="video/mp4">
+<source src="VIDEOPATH.webm" type="video/webm">
+</video>
+<div class="videoContent">
+<div class="inventorySearch">
+<!--<div class="text-center text-white">
+<h3 class="h1 margin-x">Search Inventory</h3>
+</div>-->
+<div id="block1">#Block1#</div>
+</div>
+</div>
+</div>
+<div class="quickIntroColumn colRight">
+<div class="quickIntroItem quickIntroItem1">
+#VEHICLE_PHOTO#
+</div>
+<div class="quickIntroItem quickIntroItem2">
+<a class="quickIntroLink stat-image-link" data-loc="apply for credit" href="/preapproved.aspx" onclick="DealerOnTrack.event('quickNav2','click','apply for credit')" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="quickIntroImage">
+<div class="img-background img-cover bg-main border-x hidden-xs hidden-sm" role="img" aria-label="#DEALERMAKE#" style="background-image: url('/static/industry-automotive/medium-images/shopping-online.jpg'); padding-top: 70%;"></div>
+<div class="img-background img-cover bg-main border-x visible-xs visible-sm" role="img" aria-label="#DEALERMAKE#" style="background-image: url('/static/industry-automotive/medium-images/shopping-online.jpg'); padding-top: 200px;"></div>
+</div>
+<div class="quickIntroText pad-vert-2x text-white">
+<h4 class="text-uppercase margin-top-x">Apply for Credit</h4>
+<span class="btn btn-cta btn-lg margin-top_5x">Get Financing</span>
+</div>
+</a>
+</div>
+<div class="quickIntroItem quickIntroItem3">
+<a class="quickIntroLink stat-image-link" data-loc="schedule service" href="/serviceappmt.aspx" onclick="DealerOnTrack.event('quickNav3','click','schedule service')" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="quickIntroImage">
+<div class="img-background img-cover bg-main border-x hidden-xs hidden-sm" role="img" aria-label="#DEALERMAKE#" style="background-image: url('/static/industry-automotive/medium-images/service/brake-repair.jpeg'); padding-top: 70%;"></div>
+<div class="img-background img-cover bg-main border-x visible-xs visible-sm" role="img" aria-label="#DEALERMAKE#" style="background-image: url('/static/industry-automotive/medium-images/service/brake-repair.jpeg'); padding-top: 200px;"></div>
+</div>
+<div class="quickIntroText pad-vert-2x text-white">
+<h4 class="text-uppercase margin-top-x">Schedule Service</h4>
+<span class="btn btn-cta btn-lg margin-top_5x">Schedule Now</span>
+</div>
+</a>
+</div>
+</div>
+</div>
