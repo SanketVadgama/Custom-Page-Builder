@@ -1,0 +1,330 @@
+<style>
+.homepage-search-widget-cosmos {
+padding: 0 2em;
+min-height: 250px;
+}
+#h_search_widget_panel_search_by_stock .form-group:last-of-type:before {
+content: none;
+}
+#fancy-banner__left .pulse-button {
+border: 4px solid #fff;
+box-shadow: 0 0 0 0 #fff;
+}
+.pulse-button {
+position: relative;
+font-size: 25px;
+margin-top: 1em;
+padding-top: 10px;
+width: 60px;
+height: 60px;
+border: 4px solid var(--cta-background-color);
+box-shadow: 0 0 0 0 var(--cta-background-color);
+border-radius: 50%;
+background-color: transparent;
+cursor: pointer;
+-webkit-animation: pulse 2s infinite cubic-bezier(0.3, 0, 0, 1);
+-moz-animation: pulse 2s infinite cubic-bezier(0.3, 0, 0, 1);
+animation: pulse 2s infinite cubic-bezier(0.3, 0, 0, 1);
+}
+@-webkit-keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+@-moz-keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+@keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+.fancy-banner {
+overflow: hidden;
+}
+.fancy-banner__left .fancy-banner__inner {
+transition: all 0.8s;
+background: linear-gradient(90deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url("/static/industry-automotive/hero/lot/lot-hero.jpg") center center/cover no-repeat;
+color: #fff;
+}
+@media (max-width: 768px) {
+.fancy-banner__left .fancy-banner__inner {
+background: linear-gradient(90deg, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("/static/industry-automotive/hero/lot/lot-hero.jpg?height=663&format=pjpg&auto=webp&quality=25,35") center center/cover no-repeat;
+}
+}
+.fancy-banner__right .fancy-banner__inner {
+transition: transform 0.8s;
+background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("/static/industry-automotive/hero/service-parts/service-hero3.jpg") center center/cover no-repeat;
+}
+.fancy-banner__outer .fancy-banner__inner {
+text-align: center;
+padding: 25px 15px;
+}
+@media only screen and (min-width: 1200px) {
+.action-hide {
+opacity: 0;
+}
+.flex-box {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.flex-1 {
+flex: 1;
+margin: 1%;
+}
+.fancy-banner__container {
+position: relative;
+overflow-x: hidden;
+height: 580px;
+}
+.fancy-banner__container .overlay {
+background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ffffff', endColorstr='#e0ffffff', GradientType=1);
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+.fancy-banner__outer {
+position: absolute;
+width: 85%;
+height: 100%;
+overflow: hidden;
+transition: transform 0.8s;
+}
+.fancy-banner__outer .fancy-banner__inner {
+height: inherit;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.fancy-banner__inner:before,
+.fancy-banner__inner:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+z-index: 1;
+pointer-events: none;
+}
+.fancy-banner__content {
+width: 50%;
+}
+#fancy-banner__left .fancy-banner__content {
+width: 52%;
+}
+.fancy-banner__content-expanded {
+width: 70%;
+}
+.fancy-banner__right .fancy-banner__content-expanded {
+margin-left: 10%;
+}
+#fancy-banner__right .fancy-banner__content {
+position: absolute;
+top: 30%;
+}
+.fancy-banner__content,
+.fancy-banner__content-expanded {
+z-index: 1;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+.fancy-banner__right .fancy-banner__content {
+left: 39%;
+}
+.fancy-banner__right.collapsed .fancy-banner__content {
+left: 23%;
+}
+.fancy-banner__left {
+top: 0;
+left: -10%;
+z-index: 0;
+}
+.fancy-banner__left:hover .fancy-banner__inner {
+transition: all 0.8s;
+}
+.fancy-banner__left.collapsed .fancy-banner__inner .fancy-banner__content {
+left: 50%;
+}
+.fancy-banner__right .fancy-banner__inner .fancy-banner__content-expanded {
+transition: all 0.8s;
+}
+.fancy-banner__left:hover .fancy-banner__inner .fancy-banner__content {
+transition: all 0.8s;
+}
+.fancy-banner__left:hover .fancy-banner__inner:before {
+opacity: 1;
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content,
+.fancy-banner__left .fancy-banner__content .inventory-expanded-content {
+transition: all 0.8s;
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content {
+position: absolute;
+transform: translateX(-45%);
+}
+.fancy-banner__left .fancy-banner__content .inventory-expanded-content.action-hide {
+transform: translateX(-35%);
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content.action-hide {
+position: absolute;
+transform: translateX(0);
+}
+.fancy-banner__right {
+top: 0;
+right: -27%;
+z-index: 1;
+transform: skewX(-10deg) translateX(-15%);
+-moz-transform: skewX(-10deg) translateX(-15%);
+-webkit-transform: skewX(-10deg) translateX(-15%);
+transform-origin: top left;
+}
+.fancy-banner__right .fancy-banner__inner {
+transform: skewX(10deg) translateX(-15%);
+-webkit-transform: skewX(10deg) translateX(-15%);
+-moz-transform: skewX(10deg) translateX(-15%);
+transform-origin: top left;
+}
+.fancy-banner__right:hover .fancy-banner__inner:before {
+opacity: 1;
+}
+.fancy-banner__right.collapsed {
+transform: skewX(-10deg) translateX(38%);
+-webkit-transform: skewX(-10deg) translateX(38%);
+-moz-transform: skewX(-10deg) translateX(38%);
+transform-origin: top left;
+}
+.fancy-banner__right.collapsed .fancy-banner__inner {
+transform: skewX(10deg) translateX(-35%);
+-webkit-transform: skewX(10deg) translateX(-35%);
+-moz-transform: skewX(10deg) translateX(-35%);
+transform-origin: top left;
+}
+.fancy-banner__right.collapsed .fancy-banner__inner:after {
+opacity: 1;
+}
+}
+@media only screen and (min-width: 768px) {
+#schedule-service-mobile .flex > *:first-child {
+text-align: right;
+}
+#schedule-service-mobile .flex > *:last-child {
+border-left: 1px solid rgba(0,0,0,.2);
+}
+}
+@media only screen and (max-width: 1199px) {
+#fancy-banner__left .fancy-banner__content {
+padding: 25px 0;
+}
+.fancy-banner__right .fancy-banner__inner {
+background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.8)), url("/static/industry-automotive/hero/service-parts/service-hero3.jpg?width=990") center center/cover no-repeat;
+}
+.form-control {
+display: inline-block !important;
+}
+}
+@media only screen and (max-width: 767px) {
+.horizontalInventorySearch {
+padding-left: 20px;
+padding-right: 10px;
+}
+.pulse-button i {
+position: absolute;
+left: 0;
+right: 0;
+top: 14px;
+bottom: 0;
+}
+}
+</style>
+
+<section class="fancy-banner bg-main border-x clearfix">
+<div class="fancy-banner__container">
+<div class="overlay"></div>
+<div id="fancy-banner__left" class="fancy-banner__outer fancy-banner__left">
+<div class="fancy-banner__inner">
+<div class="fancy-banner__content container">
+<div class="inventory-collapsed-content visible-lg visible-xl action-hide">
+<h2 class="heading-xl text-uppercase text-white">Inventory</h2>
+<button class="pulse-button text-white" type="button"><i class="fa fa-plus" aria-label="Plus sign"></i><span class="sr-only">More</span></button>
+</div>
+<!-- Mobile Title -->
+<div class="inventory-expanded-content pad-vert-1x">
+<h2 class="heading-xl margin-x text-uppercase text-white">Inventory</h2>
+<h3 class="margin-top-x text-uppercase text-white">Search</h3>
+<div id="block1">
+#block1#
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fancy-banner__right" class="fancy-banner__outer fancy-banner__right collapsed">
+<div class="fancy-banner__inner hidden-md hidden-sm hidden-xs">
+<div class="fancy-banner__content container text-cta">
+<div class="visible-lg visible-xl">
+<h2 class="heading-xl text-uppercase text-main">Service</h2>
+<button class="pulse-button" type="button"><i aria-hidden="true" class="fa fa-plus" aria-label="Plus sign"></i><span class="sr-only">More</span></button>
+</div>
+</div>
+<div class="fancy-banner__content-expanded text-cta action-hide hidden-md hidden-sm hidden-xs">
+<h2 class="heading-lg text-main">Service</h2>
+<p class="lead margin-vert_5x text-main">Our technicians are highly trained to perform quality service.</p>
+<div class="flex-box margin-top-3x">
+<div class="flex-1">
+<i class="fa fa-4x fa-cogs"></i>
+<div class="clearfix"></div>
+<a class="btn btn-cta btn-lg margin-vert-1x pad-horz-2x" href="/service.aspx" onclick="DealerOnTrack.event('ServiceDept','click','HomepageIntroWidget')" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/service.aspx" data-dotagging-event="cta_interaction">Service</a>
+</div>
+<div class="flex-1">
+<i class="fa fa-4x fa-th-list"></i>
+<div class="clearfix"></div>
+<a class="btn btn-cta btn-lg margin-vert-1x pad-horz-2x" href="/serviceappmt.aspx" onclick="DealerOnTrack.event('ScheduleService','click','HomepageIntroWidget')" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-event="cta_interaction">Schedule</a>
+</div>
+<div class="flex-1">
+<i class="fa fa-4x fa-tags"></i>
+<div class="clearfix"></div>
+<a class="btn btn-cta btn-lg margin-vert-1x pad-horz-2x" href="/service-parts-specials.html" onclick="DealerOnTrack.event('ServiceSpecials','click','HomepageIntroWidget')" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/service-parts-specials.html" data-dotagging-event="cta_interaction">Specials</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Schedule Service-->
+<div id="schedule-service-mobile" class="visible-md visible-sm visible-xs pad-horz-1x pad-vert-2x text-center bg-alt1">
+<h2 class="margin-top-x text-uppercase">Schedule Service</h2>
+<a class="btn btn-main btn-lg margin-top-1x" href="/serviceappmt.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-event="cta_interaction"><i class="fa fa-calendar pad-right_5x" aria-hidden="true"></i> Schedule Now</a>
+</div>
+
+<script>
+function collapseLeft() {
+document.getElementById('fancy-banner__right').classList.remove('collapsed')
+document.querySelector('#fancy-banner__right .fancy-banner__content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__right .fancy-banner__content-expanded').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-collapsed-content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-expanded-content').classList.toggle('action-hide')
+$('#fancy-banner__left .horizontalInventorySearch select').hide();
+}
+function resetLeft() {
+document.getElementById('fancy-banner__right').classList.add('collapsed')
+document.querySelector('#fancy-banner__right.collapsed .fancy-banner__content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__right.collapsed .fancy-banner__content-expanded').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-collapsed-content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-expanded-content').classList.toggle('action-hide')
+$('#fancy-banner__left .horizontalInventorySearch select').show();
+}
+document.getElementById('fancy-banner__right').addEventListener('mouseenter', collapseLeft)
+document.getElementById('fancy-banner__right').addEventListener('mouseleave', resetLeft)
+</script>
