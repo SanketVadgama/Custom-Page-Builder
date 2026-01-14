@@ -1,0 +1,41 @@
+<div class="accordion pad-top-1x">
+<div class="accordion-item">
+<div class="accordion-question pad-1x">
+<h4>QUESTION 1</h4>
+<i class="fa fa-plus-circle margin-left-1x" aria-hidden="true"></i>
+</div>
+<div class="accordion-answer pad-1x">
+<!-- Place your answer content here -->
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-question pad-1x">
+<h4>QUESTION 2</h4>
+<i class="fa fa-plus-circle margin-left-1x" aria-hidden="true"></i>
+</div>
+<div class="accordion-answer pad-1x">
+<!-- Place your answer content here -->
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-question pad-1x">
+<h4>QUESTION 3</h4>
+<i class="fa fa-plus-circle margin-left-1x" aria-hidden="true"></i>
+</div>
+<div class="accordion-answer pad-1x">
+<!-- Place your answer content here -->
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function () {
+$(".accordion-question").click(function () {
+const answer = $(this).next(".accordion-answer");
+const icon = $(this).find(".fa-plus-circle");
+$(".accordion-answer").not(answer).slideUp(300);
+$(".fa-plus-circle").not(icon).removeClass("rotate");
+answer.slideToggle(300);
+icon.toggleClass("rotate");
+});
+});
+</script>
