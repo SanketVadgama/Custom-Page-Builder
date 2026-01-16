@@ -1,0 +1,10 @@
+mobileLayout = function() {
+var width = window.innerWidth;
+if (width <= 991) {
+$('.quickIntro .quickIntroItem1').insertBefore('.quickIntro .colLeft');
+} else {
+$('.quickIntro .quickIntroItem1').insertBefore('.quickIntro .quickIntroItem2');
+}
+}
+$(document).ready(mobileLayout);
+$(window).resize(mobileLayout);
