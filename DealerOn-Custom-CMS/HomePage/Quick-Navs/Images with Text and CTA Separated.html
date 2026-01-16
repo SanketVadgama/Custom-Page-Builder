@@ -1,0 +1,70 @@
+<style>
+.quick-container { display: flex; flex-flow: row wrap; justify-content: space-between; }
+.quick-container .quick-item { width: 32.5%; }
+.quick-item { height: 325px; overflow: hidden; position: relative; }
+.quick-item .bg-image { left: 0; position: absolute; right: 0; top: 0; }
+.quick-item .heading-sec { background-color: rgba(26, 26, 26, .8); bottom: 0; left: 0; position: absolute; right: 0; }
+.quick-item.bg-main { border: none; }
+.quick-item .btn-alt4 { color: #fff; background-color: transparent; border-color: #fff; }
+.quick-item .btn-alt4:hover, .btn-alt4:focus, .btn-alt4:active { color: var(--main-color); background-color: #fff; border-color: #fff; }
+@media (max-width: 1199px) and (min-width: 992px) {
+.quick-item { height: 275px; }
+.quick-item .bg-image { padding-top: 275px !important; }
+}
+@media (min-width: 992px) {
+.quick-item .bg-image { -webkit-transition: all 900ms cubic-bezier(0, 0, .58, 1); -moz-transition: all 900ms cubic-bezier(0, 0, .58, 1); }
+.quick-item:hover .bg-image { transform: scale(1.06, 1.06); }
+.quick-item .heading-sec { -webkit-box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45); -moz-box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45); box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45); -webkit-transition: all 400ms cubic-bezier(.455, .03, .515, .955); -moz-transition: all 400ms cubic-bezier(.455, .03, .515, .955); }
+.quick-item:hover .heading-sec { background-color: rgba(26, 26, 26, .9); }
+.quick-item:hover .bg-image::after { opacity: 1; }
+.quick-item .heading-sec h2 { -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.quick-item { height: 164px; }
+.quick-item .bg-image { padding-top: 164px !important; }
+}
+@media (max-width: 767px) {
+.quick-container .quick-item { width: 100%; }
+.quick-item { height: 130px; margin: 5px 0; }
+}
+</style>
+
+<h2 class="h1 model-heading margin-x text-center">Shopping Tools</h2>
+<div class="quick-container margin-top-3x">
+<!-- cta1 -->
+<div class="quick-item bg-main">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-element-order="0" data-dotagging-product-name="Website|Custom Content" data-loc="shopping tools" href="/preapproved.aspx">
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lease-buy-customer.jpg'); background-color: #222; padding-top: 325px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lease-buy-customer.jpg'); background-color: #222; padding-top: 130px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec pad-2x">
+<h2 class="margin-x text-white">Easy
+<br class="visible-sm">Financing</h2>
+<span class="btn btn-alt4 margin-top-1x">Get Pre-Approved</span>
+</div>
+</a>
+</div>
+<!-- cta2 -->
+<div class="quick-item bg-main">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-product-name="Website|Custom Content" data-loc="shopping tools" data-dotagging-element-order="1" href="/serviceappmt.aspx">
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/mechanics.jpg'); background-color: #222; padding-top: 325px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/mechanics.jpg'); background-color: #222; padding-top: 130px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec pad-2x">
+<h2 class="margin-x text-white">Quality
+<br class="visible-sm">Service</h2>
+<span class="btn btn-alt4 margin-top-1x">Schedule Service</span>
+</div>
+</a>
+</div>
+<!-- cta3 -->
+<div class="quick-item bg-main">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/newspecials.aspx" data-dotagging-product-name="Website|Custom Content" data-loc="shopping tools" data-dotagging-element-order="2" href="/newspecials.aspx">
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/driving.jpg'); background-color: #222; padding-top: 325px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/driving.jpg'); background-color: #222; padding-top: 130px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec pad-2x">
+<h2 class="margin-x text-white">Special
+<br class="visible-sm">Offers</h2>
+<span class="btn btn-alt4 margin-top-1x">View Specials</span>
+</div>
+</a>
+</div>
+</div>

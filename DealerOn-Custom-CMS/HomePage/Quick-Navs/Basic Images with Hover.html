@@ -1,0 +1,60 @@
+<style>
+.quick-container { display: flex; flex-flow: row wrap; justify-content: space-between; }
+.quick-container .quick-item { width: 32.5%; }
+.quick-item { height: 275px; overflow: hidden; position: relative; }
+.quick-item .bg-image { left: 0; position: absolute; right: 0; top: 0; }
+.quick-item .heading-sec { left: 40px; position: absolute; bottom: 40px; }
+@media (min-width: 992px) {
+.quick-item .bg-image { -webkit-transition: all 900ms cubic-bezier(0,0,.58,1); -moz-transition: all 900ms cubic-bezier(0,0,.58,1); }
+.quick-item:hover .bg-image { transform: scale(1.06,1.06); }
+.quick-item .bg-image::after { content: ''; background-color: rgba(0,0,0,.5); width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; -webkit-box-shadow: inset 0 0 33px -4px rgba(0,0,0,.45); -moz-box-shadow: inset 0 0 33px -4px rgba(0,0,0,.45); box-shadow: inset 0 0 33px -4px rgba(0,0,0,.45); -webkit-transition: all 400ms cubic-bezier(.455,.03,.515,.955); -moz-transition: all 400ms cubic-bezier(.455,.03,.515,.955); }
+.quick-item:hover .bg-image::after { opacity: 1; }
+.quick-item .heading-sec h3 { -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+.quick-item:hover .heading-sec h3 { color: var(--cta-hover-color); }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.quick-item { height: 225px; }
+.quick-item .bg-image { padding-top: 225px !important; }
+}
+@media (max-width: 767px) {
+.quick-container .quick-item { width: 100%; }
+.quick-item { height: 110px; margin: 5px 0; }
+}
+</style>
+
+<h2 class="h1 model-heading margin-x text-center">Shopping Tools</h2>
+<div class="quick-container margin-top-2x">
+<!-- CTA1 -->
+<div class="quick-item bg-main border-x">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-product-name="Website|Custom Content" data-loc="get pre-approved" data-dotagging-element-order="0" href="/preapproved.aspx" onclick="DealerOnTrack.event('quickNav1','click','get pre-approved')">
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.9)), url('/static/industry-automotive/business_handshake.jpg'); background-color: #222; padding-top: 275px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)), url('/static/industry-automotive/business_handshake.jpg'); background-color: #222; padding-top: 110px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec">
+<h3 class="margin-x text-white"><i class="fa fa-angle-right margin-right_5x hidden-xxs hidden-sm hidden-md"></i> Get
+<br class="visible-sm">Approved</h3>
+</div>
+</a>
+</div>
+<!-- CTA2 -->
+<div class="quick-item bg-main border-x">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-product-name="Website|Custom Content" data-loc="schedule service" data-dotagging-element-order="1" href="/serviceappmt.aspx" onclick="DealerOnTrack.event('quickNav2','click','schedule service')">
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.9)), url('/static/industry-automotive/engine-maintenance-full.jpg'); background-color: #222; padding-top: 275px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)), url('/static/industry-automotive/engine-maintenance-full.jpg'); background-color: #222; padding-top: 110px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec">
+<h3 class="margin-x text-white"><i class="fa fa-angle-right margin-right_5x hidden-xxs hidden-sm hidden-md"></i> Schedule
+<br class="visible-sm">Service</h3>
+</div>
+</a>
+</div>
+<!-- CTA3 -->
+<div class="quick-item bg-main border-x">
+<a class="stat-image-link" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/specials.aspx" data-dotagging-product-name="Website|Custom Content" data-loc="new specials" data-dotagging-element-order="2" href="/specials.aspx" onclick="DealerOnTrack.event('quickNav3','click','view specials')">
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.9)), url('/static/industry-automotive/buy-car-online.jpg'); background-color: #222; padding-top: 275px;" class="img-background img-cover bg-image hidden-xs"></div>
+<div role="img" aria-label="" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)), url('/static/industry-automotive/buy-car-online.jpg'); background-color: #222; padding-top: 110px;" class="img-background img-cover bg-image visible-xs"></div>
+<div class="heading-sec">
+<h3 class="margin-x text-white"><i class="fa fa-angle-right margin-right_5x hidden-xxs hidden-sm hidden-md"></i> View
+<br class="visible-sm">Specials</h3>
+</div>
+</a>
+</div>
+</div>

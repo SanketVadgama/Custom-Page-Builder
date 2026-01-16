@@ -1,0 +1,103 @@
+<style>
+.quick-container {
+padding: 10px 0;
+}
+.quick-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+.quick-item {
+border-radius: 3px;
+height: 225px;
+overflow: hidden;
+position: relative;
+width: 32.8%;
+}
+.quick-item .bg-image {
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+}
+.quick-item .heading-sec {
+left: 0;
+position: absolute;
+right: 0;
+top: 50%;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+@media (min-width: 992px) {
+.quick-item .bg-image {
+-webkit-transition: all 900ms cubic-bezier(0, 0, .58, 1);
+-moz-transition: all 900ms cubic-bezier(0, 0, .58, 1);
+}
+.quick-item:hover .bg-image {
+transform: scale(1.06, 1.06);
+}
+.quick-item .bg-image::after {
+content: '';
+background-color: rgba(0, 0, 0, .5);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position: absolute;
+opacity: 0;
+-webkit-box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45);
+-moz-box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45);
+box-shadow: inset 0 0 33px -4px rgba(0, 0, 0, .45);
+-webkit-transition: all 400ms cubic-bezier(.455, .03, .515, .955);
+-moz-transition: all 400ms cubic-bezier(.455, .03, .515, .955);
+}
+.quick-item:hover .bg-image::after {
+opacity: 1;
+}
+.quick-item .heading-sec h2 {
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+}
+@media (max-width: 767px) {
+.quick-item {
+height: 175px;
+margin-bottom: 10px;
+width: 100%;
+}
+}
+</style>
+
+<div class="quick-container">
+<!-- CTA1 -->
+<div class="quick-item quick-item-1 bg-main border-x">
+<a class="stat-image-link" data-loc="get pre-approved" data-dotagging-element-order="0" href="/preapproved.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="img-background img-cover bg-image hidden-xs" role="img" aria-label="Financing Service" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/customers-06.jpg'); background-color: #1a1a1a; padding-top: 225px;"></div>
+<div class="img-background img-cover bg-image visible-xs" role="img" aria-label="Financing Service" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/customers-06.jpg'); background-color: #1a1a1a; padding-top: 175px;"></div>
+<div class="heading-sec text-white">
+<h2 class="margin-x text-uppercase text-center">Financing</h2>
+</div>
+</a>
+</div>
+<!-- CTA2 -->
+<div class="quick-item quick-item-2 bg-main border-x">
+<a class="stat-image-link" data-loc="new specials" data-dotagging-element-order="1" href="/newspecials.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/newspecials.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="img-background img-cover bg-image hidden-xs" role="img" aria-label="Driver Hands on Vehicle Steering Wheel" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/happy-customer.jpg'); background-color: #1a1a1a; padding-top: 225px;"></div>
+<div class="img-background img-cover bg-image visible-xs" role="img" aria-label="Driver Hands on Vehicle Steering Wheel" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/happy-customer.jpg'); background-color: #1a1a1a; padding-top: 175px;"></div>
+<div class="heading-sec text-white">
+<h2 class="margin-x text-uppercase text-center">Specials</h2>
+</div>
+</a>
+</div>
+<!-- CTA3 -->
+<div class="quick-item quick-item-3 bg-main border-x">
+<a class="stat-image-link" data-loc="schedule service" data-dotagging-element-order="2" href="/serviceappmt.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="img-background img-cover bg-image hidden-xs" role="img" aria-label="Tire Service" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/tire-small.jpg'); background-color: #1a1a1a; padding-top: 225px;"></div>
+<div class="img-background img-cover bg-image visible-xs" role="img" aria-label="Tire Service" style="background-image: linear-gradient(190deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url('/static/industry-automotive/tire-small.jpg'); background-color: #1a1a1a; padding-top: 175px;"></div>
+<div class="heading-sec text-white">
+<h2 class="margin-x text-uppercase text-center">Service</h2>
+</div>
+</a>
+</div>
+</div>

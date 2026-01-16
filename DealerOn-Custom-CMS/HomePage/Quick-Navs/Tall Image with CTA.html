@@ -1,0 +1,59 @@
+<style>
+.quickNav .img-background { transition: -webkit-transform .3s; transition: transform .3s; }
+.quickNav .quickNavItem { overflow: hidden !important; position: relative !important; transition: none!important; padding: 0!important; }
+.quickNav .quickNavHeading { background: rgba(0,0,0,.4); height: 100%; position: absolute; transition: background .3s .15s; width: 100%; z-index: 1; }
+.quickNav .quickNavHeading h3 { text-transform: uppercase; }
+.quickNav .quickNavHeading .wrapper { left: 0; position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 0; z-index: 1; }
+@media (max-width: 991px) {
+.quickNav .quickNavHeading h3 { font-size: 25px; }
+}
+@media (min-width: 768px) {
+.quickNav .quickNavItem:hover .quickNavHeading { background: rgba(0,0,0,.8); }
+.quickNav .quickNavItem:hover .img-background { transform: scale(1.2,1.2); -webkit-transform: scale(1.05,1.05); }
+}
+@media (max-width:767px) {
+.quickNav .img-background { padding-top: 125px !important; }
+}
+</style>
+
+<div class="row quickNav margin-x gutter-x text-center">
+<div class="col-sm-4 pad-x">
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-order="0" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-product-name="Website|Custom Content" href="/preapproved.aspx" onclick="DealerOnTrack.event('get financing','click','apply today')">
+<div class="quickNavItem quickNavItem1 text-white">
+<div class="quickNavHeading">
+<div class="wrapper">
+<h3 class="h2 margin-x">Get Financing</h3>
+<div class="btn btn-cta text-uppercase btn-md margin-top-1x">Apply Today</div>
+</div>
+</div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lease-buy-customer.jpg'); padding-top: 100%;" class="img-background img-cover"></div>
+</div>
+</a>
+</div>
+<div class="col-sm-4 pad-x">
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-order="1" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/newspecials.html" data-dotagging-product-name="Website|Custom Content" href="/newspecials.html" onclick="DealerOnTrack.event('current offers','click','view specials')">
+<div class="quickNavItem quickNavItem2 text-white">
+<div class="quickNavHeading">
+<div class="wrapper">
+<h3 class="h2 margin-x">Current Offers</h3>
+<div class="btn btn-cta text-uppercase btn-md margin-top-1x">View Specials</div>
+</div>
+</div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lot-bg4.jpg'); padding-top: 100%;" class="img-background img-cover"></div>
+</div>
+</a>
+</div>
+<div class="col-sm-4 pad-x">
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-order="2" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/trade.aspx" data-dotagging-product-name="Website|Custom Content" href="/trade.aspx" onclick="DealerOnTrack.event('trade','click','value my trade')">
+<div class="quickNavItem quickNavItem3 text-white">
+<div class="quickNavHeading">
+<div class="wrapper">
+<h3 class="h2 margin-x">Trade</h3>
+<div class="btn btn-cta text-uppercase btn-md margin-top-1x">Value My Trade</div>
+</div>
+</div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/service-full.jpg'); padding-top: 100%;" class="img-background img-cover"></div>
+</div>
+</a>
+</div>
+</div>
