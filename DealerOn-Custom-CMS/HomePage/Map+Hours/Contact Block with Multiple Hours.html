@@ -1,0 +1,48 @@
+<style>
+.contact-section { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.contact-item { width: 48%; }
+.contact-maps .table > tbody > tr > td { padding: 2px 0; }
+@media (max-width: 1199px) and (min-width: 992px) {
+.contact-maps .table { font-size: 12px; }
+}
+@media (max-width: 991px) {
+.contact-item { width: 100%; }
+}
+</style>
+
+<div class="pad-vert-1x hidden-xs"></div>
+<div class="contact-section margin-vert-1x">
+<div class="contact-item contact-item-2">
+#GMAP|500|325#
+<div class="pad-vert-1x visible-xs visible-sm"></div>
+</div>
+<div class="contact-item contact-item-1">
+<h2 class="h4 margin-bottom-x">#NAME#</h2>
+<p class="text-muted">#CITY#, #STATE#</p>
+<p class="margin-vert-1x">#ADDRESS#</p>
+<ul class="list-inline list-pad-right-1x margin-bottom-3x">
+<li>
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/hours.aspx" data-dotagging-product-name="Website|Custom Content" href="/hours.aspx">
+<i class="fa fa-map-marker margin-right_5x" aria-hidden="true"></i> Get Directions
+</a>
+</li>
+<li>
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="redirect" data-dotagging-link-url="tel:#PHONE1-MOBI-DIGITS#" data-dotagging-product-name="Website|Custom Content" href="tel:#PHONE1-MOBI-DIGITS#">
+<i class="fa fa-phone margin-right_5x" aria-hidden="true"></i> #PHONE1-NUMBER#
+</a>
+</li>
+</ul>
+<h3 class="h4 margin-top-x">Hours</h3>
+<div class="contact-maps row">
+<div class="col-xxs-12 col-xs-6">
+<h4 class="h5">Sales</h4>
+#SALESHOURS|CONDENSED|NOTITLE#
+</div>
+<div class="col-xxs-12 col-xs-6">
+<h4 class="h5">Service</h4>
+#SERVICEHOURS|CONDENSED|NOTITLE#
+</div>
+</div>
+</div>
+</div>
+<div class="pad-vert-2x hidden-xs hidden-sm"></div>
