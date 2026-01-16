@@ -1,0 +1,74 @@
+<style>
+.colLeft {
+position: relative;
+overflow: hidden;
+}
+.colRight {
+position: relative;
+}
+.videoElement {
+object-fit: cover;
+height: 100%;
+width: 100%;
+background: url('VIDEOPATH.jpg') no-repeat;
+max-height: 500px;
+}
+@media (min-width: 1200px) {
+.colLeft {
+width: 40%;
+}
+.colRight {
+width: 60%;
+}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+.colLeft, .colRight {
+width: 50%;
+}
+}
+@media (min-width: 992px) {
+.introSec {
+padding: 15px;
+}
+.inventorySearch {
+position: relative;
+z-index: 2;
+width: 100%;
+}
+.quickIntroColumn {
+display: flex;
+min-height: 200px;
+align-items: center;
+}
+#homepageSearchWidgetCosmos {
+min-height: 226px;
+}
+}
+@media (max-width: 991px) {
+.videoElement, .colRight {
+display: none;
+}
+.colLeft, .colRight {
+width: 100%;
+}
+.inventorySearch {
+padding: 10px;
+}
+}
+</style>
+
+<section class="introSec">
+<div class="quickIntro flex-all flex-wrap">
+<div class="quickIntroColumn colLeft bg-main border-x">
+<div class="inventorySearch pad-2x">
+<div id="block1">#Block1#</div>
+</div>
+</div>
+<div class="quickIntroColumn colRight">
+<video class="videoElement" autoplay loop muted poster="VIDEOPATH.jpg">
+<source src="VIDEOPATH.mp4" type="video/mp4">
+<source src="VIDEOPATH.webm" type="video/webm">
+</video>
+</div>
+</div>
+</section>

@@ -1,0 +1,89 @@
+<style>
+:root {
+--video-height-desktop: 500px;
+}
+.videoContent {
+position: relative;
+}
+.videoElement {
+position: absolute;
+z-index: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+min-width: 100%;
+height: 60vh;
+min-height: var(--video-height-desktop);
+background-size: 100% 100%;
+background-color: black;
+background-position: center center;
+object-fit: cover;
+}
+@media (min-width: 992px) {
+.introSec {
+height: 60vh;
+min-height: var(--video-height-desktop);
+position: relative;
+}
+.videoContent {
+top: 50%;
+transform: translateY(-50%);
+z-index: 2;
+}
+#videoOverlay {
+width: 100%;
+height: 60vh;
+min-height: var(--video-height-desktop);
+top: 0;
+background: rgba(0, 0, 0, 0.4);
+position: absolute;
+z-index: 1;
+}
+}
+@media (max-width: 991px) {
+.videoElement {
+display: none;
+}
+.introSec {
+background: url(VIDEOPATH.jpg) no-repeat center center / cover;
+position: relative;
+padding: 35px 0;
+}
+#videoOverlay {
+width: 100%;
+height: 100%;
+top: 0;
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+z-index: 0;
+}
+}
+</style>
+
+<div class="introSec">
+<div id="videoOverlay"></div>
+<video class="videoElement" autoplay="" loop="" muted="" volume="0">
+<source src="VIDEOPATH.mp4" type="video/mp4">
+<source src="VIDEOPATH.webm" type="video/webm">
+</video>
+<div class="videoContent">
+<div class="inventorySearch">
+<div class="container">
+<div id="block1">#Block1#</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-alt1 pad-vert-1x text-center">
+<div class="container">
+<ul class="list-inline list-pad-horz-1x list-pad-vert_5x list-vert-align margin-bottom-x">
+<li>
+<h3 class="margin-x">Schedule a Service Appointment</h3>
+</li>
+<li>
+<a class="btn btn-main btn-lg pad-horz-2x" href="/serviceappmt.aspx" data-dotagging-event="cta_interaction" data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open" data-dotagging-element-type="body" data-dotagging-element-order="0" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/serviceappmt.aspx">Schedule Service</a>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,106 @@
+<style>
+#shopByVehicleHeader {
+display: none;
+}
+.homepage-search-widget-cosmos {
+padding: 2em 2em 0;
+}
+@media (min-width: 1200px) {
+.introSec {
+position: relative;
+}
+}
+@media (min-width: 1200px) {
+.introSec {
+max-height: 450px;
+overflow: hidden;
+}
+.videoElement {
+background-size: 100% 100%;
+background-color: black;
+background-position: center center;
+bottom: 0;
+left: 0;
+min-width: 100%;
+min-height: 450px;
+position: absolute;
+object-fit: cover;
+right: 0;
+width: 100%;
+z-index: 0;
+}
+#videoOverlay {
+background: rgba(0, 0, 0, 0.5);
+height: 100%;
+position: absolute;
+top: 0;
+width: 100%;
+}
+.introSec .videoContent {
+background: transparent;
+display: table;
+height: 450px;
+position: relative;
+table-layout: fixed;
+width: 100%;
+z-index: 3;
+}
+.introSec .videoContent .centered {
+display: table-cell;
+vertical-align: middle;
+width: 100%;
+}
+#homepageSearchWidgetCosmos {
+min-height: 226px;
+}
+}
+@media (max-width: 1199px) {
+.videoElement {
+display: none !important;
+}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+.videoContent {
+padding: 95px 0;
+}
+}
+@media (min-width: 992px) {
+.introSec {
+background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), #403f45 url('VIDEOPATH.jpg') no-repeat scroll center / cover;
+}
+}
+@media (max-width: 991px) {
+.introSec {
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), #403f45 url('VIDEOPATH.jpg?width=991') no-repeat scroll center / cover;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.videoContent {
+padding: 65px 0;
+}
+}
+@media (max-width: 767px) {
+.videoContent {
+padding: 45px 0;
+}
+}
+</style>
+
+<section class="introSec bg-main border-x">
+<video class="videoElement" autoplay="" loop="" muted="" volume="0" poster="VIDEOPATH.jpg">
+<source src="VIDEOPATH.mp4" type="video/mp4">
+<source src="VIDEOPATH.webm" type="video/webm">
+</video>
+<div id="videoOverlay"></div>
+<div class="videoContent">
+<div class="centered">
+<div class="container text-center">
+<h2 class="h3 margin-top-x margin-bottom_5x text-uppercase">
+<span class="heading-xl heading-bold">#NAME#</span>
+<br><span class="sub-heading">Serving the Community of #CITY#, #STATE#</span>
+</h2>
+<div id="block1">#block1#</div>
+</div>
+</div>
+</div>
+</section>
