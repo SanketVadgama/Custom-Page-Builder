@@ -1,0 +1,394 @@
+<style>
+.modelBarS {
+display: none;
+}
+.modelBarS .vehicleImage {
+transition-timing-function: ease-in;
+-webkit-transition-duration: 0.1s;
+-moz-transition-duration: 0.1s;
+transition-duration: 0.1s;
+-webkit-transform: scale(0.90);
+-moz-transform: scale(0.90);
+transform: scale(0.90);
+}
+.modelBarS .vehicleImage:hover {
+-webkit-transform: scale(0.95);
+-moz-transform: scale(0.95);
+transform: scale(0.95);
+}
+.modelBarItem {
+padding: 0 3px; position: relative;
+}
+.modelBarS .vehicleName, .modelBarS .vehicleMPG {
+color: var(--main-color);
+}
+.modelBarS .vehicleMPG {
+font-size: 13px;
+}
+/* Disclaimers */
+.modelBarS .btn-disclaimer {
+position: absolute; top: 0; right: 0; border: none; font-size: 11px; padding: 3px 8px;
+}
+.modelBarS .btn-disclaimer-icon {
+background: transparent; font-size: 17px;
+}
+.modelBarS .popover {
+font-size: 12px;
+}
+.disclaimer-modal .modal-dialog {
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)!important;
+}
+@media (max-width: 539px) {
+.modelBarS .popover {
+font-size: 11px;
+}
+.disclaimer-modal .modal-dialog {
+width: 85%; left: 47%;
+}
+}
+/* Bootstrap Fix: fix content width inside hidden tabs */
+#vehicleModels .tab-content>.tab-pane,
+#vehicleModels .pill-content>.pill-pane {
+display: block; height: 0; overflow-y: hidden;
+}
+#vehicleModels .tab-content>.active,
+#vehicleModels .pill-content>.active {
+height: auto;
+}
+/* Nav/Category Item Styling */
+#modelsNavigation li {
+position: relative; display: inline-block;
+}
+#modelsNavigation li>a,
+#modelsNavigation .navigation-item a {
+color: var(--main-color); margin: 6px 0; padding: 10px 15px;
+}
+#modelsNavigation li>a:hover,
+#modelsNavigation li>a:focus,
+#modelsNavigation li.active>a,
+#modelsNavigation .navigation-item a:hover,
+#modelsNavigation .navigation-item a:focus,
+#modelsNavigation .navigation-item.active a {
+color: var(--main-color); background: transparent;
+}
+/* Active Nav Item Underline */
+#modelsNavigation li a::after {
+background: var(--cta-background-color);; bottom: 0; content: ""; display: block; left: 50%; height: 2px; opacity: .1; filter: alpha(opacity=10); position: absolute; transition: width .15s cubic-bezier(.215, .61, .355, 1), left .15s cubic-bezier(.215, .61, .355, 1), opacity .2s cubic-bezier(.215, .61, .355, 1); width: .5%;
+}
+#modelsNavigation li.active a::after,
+#modelsNavigation li a:hover::after {
+left: 0; opacity: 1; filter: alpha(opacity=100); width: 100%;
+}
+/* Nav Items Mobile Display */
+@media (max-width: 1199px) {
+#modelsNavigation .tab-divider {
+padding: 0;
+}
+}
+@media (max-width: 767px) {
+#modelsNavigation li>a,
+#modelsNavigation .navigation-item a {
+padding: 7px 7px;
+}
+}
+@media (max-width: 539px) {
+#modelsNavigation > ul {
+white-space: nowrap; overflow-x: scroll; --mask: linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x; -webkit-mask: var(--mask); mask: var(--mask);
+}
+#modelsNavigation > ul li:last-of-type {
+margin-right: 40px;
+}
+#modelsNavigation .tab-divider {
+display: none;
+}
+} </style>
+
+<link rel="stylesheet" type="text/css" href="#SHAREDPATH#CustomHTMLFiles/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="#SHAREDPATH#CustomHTMLFiles/slick/slick-theme.css">
+<div class="text-center" data-dotagging-element-type="gallery" data-dotagging-event-owner="dealeron" data-dotagging-product-name="Website|Model Bar" id="vehicleModels">
+<h2 class="margin-top-x text-uppercase">View Our Lineup</h2>
+<p class="larger margin-top-x text-muted">See our full lineup of vehicles and find the one that best fits you.</p>
+<div class="margin-top_5x margin-bottom-1x" id="modelsNavigation">
+<ul class="nav margin-x list-inline" data-dotagging-element-subtype="nav_tab" data-dotagging-event-action-result="open" draggable="true" role="tablist">
+<li class="active" id="tab-category1">
+<a data-dotagging-element-order="0" data-dotagging-element-position="top-left" data-dotagging-element-title="Popular" data-dotagging-event="element_configuration" data-toggle="tab" href="#category1" role="tab"><strong>Popular</strong></a>
+</li>
+<li class="tab-divider text-muted">|</li>
+<li id="tab-category2">
+<a data-dotagging-element-order="1" data-dotagging-element-position="top-center" data-dotagging-element-title="Cars" data-dotagging-event="element_configuration" data-toggle="tab" href="#category2" role="tab"><strong>Cars & Minivan</strong></a>
+</li>
+<li class="tab-divider text-muted">|</li>
+<li id="tab-category3">
+<a data-dotagging-element-order="2" data-dotagging-element-position="top-center" data-dotagging-element-title="Trucks" data-dotagging-event="element_configuration" data-toggle="tab" href="#category3" role="tab"><strong>Trucks</strong></a>
+</li>
+<li class="tab-divider text-muted">|</li>
+<li id="tab-category4">
+<a data-dotagging-element-order="3" data-dotagging-element-position="top-center" data-dotagging-element-title="Crossovers & SUV" data-dotagging-event="element_configuration" data-toggle="tab" href="#category4" role="tab"><strong>Crossovers & SUV</strong></a>
+</li>
+<li class="tab-divider text-muted">|</li>
+<li id="tab-category5">
+<a data-dotagging-element-order="4" data-dotagging-element-position="top-right" data-dotagging-element-title="Hybrid Electric" data-dotagging-event="element_configuration" data-toggle="tab" href="#category5" role="tab"><strong>Hybrid / Electric</strong></a>
+</li>
+</ul>
+</div>
+<div class="tab-content" data-dotagging-item-make="DEALERSHIPMAKE" id="modelsContent">
+<div class="tab-pane fade active in" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-media-type="image" id="category1">
+<div class="modelBarS text-center">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model1" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model1" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model1')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/nexo.png" alt="DEALERSHIPMAKE Model1" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model1<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model2" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model2" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model2')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-cruz.png" alt="DEALERSHIPMAKE Model2" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model2<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model3" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model3" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model3')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-fe.png" alt="DEALERSHIPMAKE Model3" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model3<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="3" data-dotagging-event="media_interaction" data-dotagging-item-model="Model4" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model4" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model4')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-fe-phev.png" alt="DEALERSHIPMAKE Model4" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model4<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+<button class="btn-disclaimer btn-main" data-dotagging-element-subtype="cta_button" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-product-name="Website|Custom Content" data-target="#disclaimer-modal-1" data-toggle="modal">DISCLAIMER</button>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="4" data-dotagging-event="media_interaction" data-dotagging-item-model="Model5" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model5" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model5')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/ioniq-6.png" alt="DEALERSHIPMAKE Model5" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model5<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="5" data-dotagging-event="media_interaction" data-dotagging-item-model="Model6" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model6" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model6')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/venue.png" alt="DEALERSHIPMAKE Model6" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+<span class="vehicleYear">YEAR </span><span class="vehicleMake">Vehiclemake </span>
+<br class="nameBreak hidden">Model6<span class="vehicleTrim"> TRIM</span>
+</p>
+<p class="vehicleMPG h5">
+18/22 est MPG
+</p>
+<div class="vehicleCTAs">
+<a class="btn btn-main btn-block" href="/searchnew.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/searchnew.aspx" data-dotagging-event="cta_interaction">View Inventory</a>
+<a class="btn btn-cta btn-block" href="/showroom.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/showroom.aspx" data-dotagging-event="cta_interaction">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-media-type="image" id="category2">
+<div class="modelBarS text-center">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model7" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model7" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model7')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/edge.png" alt="DEALERSHIPMAKE Model7" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model7</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model8" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model8" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model8')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/maverick.png" alt="DEALERSHIPMAKE Model8" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model8</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model9" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model9" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model9')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/mustang.png" alt="DEALERSHIPMAKE Model9" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model9</p>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-media-type="image" id="category3">
+<div class="modelBarS text-center">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model10" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model10" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model10')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/corolla-cross.png" alt="DEALERSHIPMAKE Model10" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model10</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model11" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model11" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model11')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/crown.png" alt="DEALERSHIPMAKE Model11" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model11</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model12" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model12" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model12')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/grandHighlander_hybrid.png" alt="DEALERSHIPMAKE Model12" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model12</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="3" data-dotagging-event="media_interaction" data-dotagging-item-model="Model13" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model13" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model13')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/rav4-prime.png" alt="DEALERSHIPMAKE Model13" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model13</p>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-media-type="image" id="category4">
+<div class="modelBarS text-center">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model7" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model7" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model7')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/edge.png" alt="DEALERSHIPMAKE Model7" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model7</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model8" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model8" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model8')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/maverick.png" alt="DEALERSHIPMAKE Model8" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model8</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model9" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model9" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model9')">
+<img src="/static/brand-ford/Homepage/model-bar/2024/mustang.png" alt="DEALERSHIPMAKE Model9" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model9</p>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-media-type="image" id="category5">
+<div class="modelBarS text-center">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model10" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model10" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model10')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/corolla-cross.png" alt="DEALERSHIPMAKE Model10" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model10</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model11" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model11" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model11')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/crown.png" alt="DEALERSHIPMAKE Model11" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model11</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model12" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model12" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model12')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/grandHighlander_hybrid.png" alt="DEALERSHIPMAKE Model12" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model12</p>
+</a>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="3" data-dotagging-event="media_interaction" data-dotagging-item-model="Model13" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model13" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model13')">
+<img src="/static/brand-toyota/Homepage/model-bar/2024/rav4-prime.png" alt="DEALERSHIPMAKE Model13" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+<p class="vehicleName h5 margin-vert-x">Model13</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modelbarBottom pad-top-1x text-center">
+<a class="btn btn-cta btn-lg margin-top-1x" data-dotagging-element-order="0" data-dotagging-element-subtype="cta_button" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" href="/searchnew.aspx">Explore All New Inventory</a>
+</div>
+</div>
+<!-- Modal -->
+<div aria-labelledby="disclaimer-modal-1Label" class="modal fade disclaimer-modal" id="disclaimer-modal-1" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body">
+Lorem ipsum dolor sit amet consectetuer adipiscing elit. Elit sit ridiculus tempor mus odio etiam fames viverra bibendum taciti.
+</div>
+</div>
+</div>
+</div>
+
+<script>
+window.addEventListener('load', function()
+{
+$(document).ready(function()
+{
+$('.modelBarS').show();
+$('.modelBarS').slick(
+{
+slidesToShow: 5,
+slidesToScroll: 1,
+centerPadding: '60px',
+autoplay: false,
+swipeToSlide: true,
+arrows: true,
+responsive: [
+{
+breakpoint: 1199,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 4
+}
+},
+{
+breakpoint: 991,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 3
+}
+},
+{
+breakpoint: 539,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 2
+}
+}]
+});
+});
+});
+</script>

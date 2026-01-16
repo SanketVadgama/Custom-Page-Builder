@@ -1,0 +1,128 @@
+<style>
+.modelBarS {
+display: none;
+}
+.modelBarS .vehicleImage {
+transition-timing-function: ease-in;
+-webkit-transition-duration: 0.1s;
+-moz-transition-duration: 0.1s;
+transition-duration: 0.1s;
+-webkit-transform: scale(0.90);
+-moz-transform: scale(0.90);
+transform: scale(0.90);
+}
+.modelBarS .vehicleImage:hover {
+-webkit-transform: scale(0.95);
+-moz-transform: scale(0.95);
+transform: scale(0.95);
+}
+.modelBarItem {
+padding: 0 3px; position: relative;
+}
+.modelBarS .vehicleName, .modelBarS .vehicleMPG {
+color: var(--main-color);
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="#SHAREDPATH#CustomHTMLFiles/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="#SHAREDPATH#CustomHTMLFiles/slick/slick-theme.css">
+<div class="text-center" data-dotagging-element-type="gallery" data-dotagging-event-owner="dealeron" data-dotagging-product-name="Website|Model Bar" id="vehicleModels">
+<h2 class="margin-top-x text-uppercase">View Our Lineup</h2>
+<div class="modelBarS text-center" data-dotagging-element-subtype="image" data-dotagging-event-action-result="search" data-dotagging-item-make="DEALERSHIPMAKE" data-dotagging-media-type="image">
+<div class="modelBarItem">
+<a data-dotagging-element-order="0" data-dotagging-event="media_interaction" data-dotagging-item-model="Model1" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model1" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model1')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/nexo.png" alt="DEALERSHIPMAKE Model1" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model1
+</p>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="1" data-dotagging-event="media_interaction" data-dotagging-item-model="Model2" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model2" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model2')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-cruz.png" alt="DEALERSHIPMAKE Model2" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model2
+</p>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="2" data-dotagging-event="media_interaction" data-dotagging-item-model="Model3" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model3" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model3')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-fe.png" alt="DEALERSHIPMAKE Model3" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model3
+</p>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="3" data-dotagging-event="media_interaction" data-dotagging-item-model="Model4" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model4" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model4')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/santa-fe-phev.png" alt="DEALERSHIPMAKE Model4" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model4
+</p>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="4" data-dotagging-event="media_interaction" data-dotagging-item-model="Model5" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model5" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model5')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/ioniq-6.png" alt="DEALERSHIPMAKE Model5" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model5
+</p>
+</div>
+<div class="modelBarItem">
+<a data-dotagging-element-order="5" data-dotagging-event="media_interaction" data-dotagging-item-model="Model6" href="/searchnew.aspx?Make=DEALERSHIPMAKE&Model=Model6" onclick="DealerOnTrack.event('Model Bar','click','DEALERSHIPMAKE Model6')">
+<img src="/static/brand-hyundai/Homepage/model-bar/2024/venue.png" alt="DEALERSHIPMAKE Model6" loading="lazy" width="IMGWIDTH" height="IMGHEIGHT" class="vehicleImage img-responsive margin-auto">
+</a>
+<p class="vehicleName h5 margin-vert-x">
+Model6
+</p>
+</div>
+</div>
+<div class="modelbarBottom pad-top-1x text-center">
+<a class="btn btn-cta btn-lg margin-top-1x" data-dotagging-element-order="0" data-dotagging-element-subtype="cta_button" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" href="/searchnew.aspx">Explore All New Inventory</a>
+</div>
+</div>
+
+<script>
+window.addEventListener('load', function()
+{
+$(document).ready(function()
+{
+$('.modelBarS').show();
+$('.modelBarS').slick(
+{
+slidesToShow: 5,
+slidesToScroll: 1,
+centerPadding: '60px',
+autoplay: false,
+swipeToSlide: true,
+arrows: true,
+responsive: [
+{
+breakpoint: 1199,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 4
+}
+},
+{
+breakpoint: 991,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 3
+}
+},
+{
+breakpoint: 539,
+settings:
+{
+centerPadding: '40px',
+slidesToShow: 2
+}
+}]
+});
+});
+});
+</script>
