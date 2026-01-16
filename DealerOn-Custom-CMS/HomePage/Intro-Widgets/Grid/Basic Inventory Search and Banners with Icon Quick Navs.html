@@ -1,0 +1,156 @@
+<style>
+.quickIntro {
+display: flex;
+border: 10px solid #fff;
+}
+.colLeft {
+position: relative;
+overflow: hidden;
+width: 42%;
+}
+.inventorySearch {
+margin: auto;
+width: 100%;
+}
+.colRight {
+flex-wrap: wrap;
+width: 58%;
+}
+.quickIntroItem {
+width: 100%;
+position: relative;
+}
+.quickIntroItem1 {
+border-bottom: 10px solid #fff;
+}
+@media (min-width: 1200px) {
+.quickIntroItem {
+border-left: 10px solid #fff;
+}
+}
+@media (max-width: 1199px) {
+.quickIntro {
+flex-flow: row wrap;
+}
+.quickIntroColumn {
+width: 100%;
+}
+.quickIntroItem1 {
+border-top: 10px solid #fff;
+}
+}
+@media (min-width: 992px) {
+.quickIntroColumn {
+display: flex;
+min-height: 200px;
+align-items: center;
+}
+#homepageSearchWidgetCosmos {
+min-height: 226px;
+}
+}
+@media (max-width: 991px) {
+.quickIntro {
+flex-wrap: wrap;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.colRight {
+flex-wrap: wrap;
+}
+}
+/* Quick Nav */
+.quick-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+.quick-nav-item {
+border: 1px solid var(--main-color);
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 40px;
+padding: 24px;
+position: relative;
+width: 24%;
+}
+.quick-nav-item:hover::after {
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 1px solid var(--main-color);
+pointer-events: none;
+position: absolute;
+box-sizing: border-box;
+}
+.icon-block i {
+font-size: 2.5em;
+color: var(--main-color);
+}
+@media (max-width: 1455px) and (min-width: 1200px) {
+.quick-nav-heading {
+font-size: 18px;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.quick-nav-heading {
+font-size: 18px;
+}
+}
+@media (max-width: 767px) {
+.quick-nav-item {
+margin-bottom: 10px;
+gap: 20px;
+width: 49%;
+}
+}
+@media (max-width: 539px) {
+.quick-nav-heading {
+font-size: 17px;
+}
+}
+</style>
+
+<div class="quickIntro">
+<div class="quickIntroColumn colLeft bg-main border-x">
+<div class="inventorySearch pad-1x">
+<div id="block1">#block1#</div>
+</div>
+</div>
+<div class="quickIntroColumn colRight">
+<div class="quickIntroItem quickIntroItem1">
+#VEHICLE_PHOTO#
+</div>
+<div class="quickIntroItem quickIntroItem2">
+<div class="quick-container">
+<a class="quick-nav-item" data-dotagging-element-order="0" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/service.aspx" data-dotagging-product-name="Website|Custom Content" href="/service.aspx">
+<div class="icon-block">
+<i class="fa fa-wrench" aria-hidden="true"></i>
+</div>
+<p class="quick-nav-heading h3 margin-x text-default">Schedule <br>Service</p>
+</a>
+<a class="quick-nav-item" data-dotagging-element-order="1" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/preapproved.aspx" data-dotagging-product-name="Website|Custom Content" href="/preapproved.aspx">
+<div class="icon-block">
+<i class="fa fa-usd" aria-hidden="true"></i>
+</div>
+<p class="quick-nav-heading h3 margin-x text-default">Get <br>Financing</p>
+</a>
+<a class="quick-nav-item" data-dotagging-element-order="2" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/trade.aspx" data-dotagging-product-name="Website|Custom Content" href="/trade.aspx">
+<div class="icon-block">
+<i class="fa fa-money" aria-hidden="true"></i>
+</div>
+<p class="quick-nav-heading h3 margin-x text-default">Value <br>Trade</p>
+</a>
+<a class="quick-nav-item" data-dotagging-element-order="3" data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/newspecials.html" data-dotagging-product-name="Website|Custom Content" href="/newspecials.html">
+<div class="icon-block">
+<i class="fa fa-car" aria-hidden="true"></i>
+</div>
+<p class="quick-nav-heading h3 margin-x text-default">New <br>Specials</p>
+</a>
+</div>
+</div>
+</div>
+</div>
