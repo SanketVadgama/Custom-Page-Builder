@@ -1,0 +1,201 @@
+<style>
+.introSec {
+position: relative;
+overflow: hidden;
+}
+.quicknav-sidebar {
+position: absolute;
+right: 0;
+top: 0;
+bottom: 0;
+width: 180px;
+animation: fadeIn1 1.5s ease .5s; animation-fill-mode: forwards;
+opacity: 0;
+}
+.cta-wrap a {
+transform: scale(1);
+position: relative;
+top: 0;
+display: table;
+width: 97%;
+}
+.cta-bar-item {
+transition: all 250ms ease-in-out;
+padding-top: 2em;
+padding-bottom: 2em;
+border-bottom: 1px solid rgba(255,255,255, .2);
+}
+.cta-bar-item:hover, .cta-bar-item:focus, .cta-bar-item:active {
+top: -10px;
+color: #fff;
+text-decoration: none !important;
+background: rgba(0,0,0,.1);
+}
+.cta-bar-item:hover a, .cta-bar-item:focus a, .cta-bar-item:active a {
+color:#fff;
+text-decoration: none;
+}
+/* Animation */
+@keyframes fadeIn1 {
+from {
+opacity: 0;
+transform: translateX(200px);
+}
+to {
+opacity: 1;
+transform: translateX(0%);
+}
+}
+/* Media Queries */
+@media (min-width: 1441px) {
+.introSec > .container {
+width: 1440px;
+}
+}
+@media (min-width: 1200px) {
+.introSec {
+padding: 180px 0 136px;
+}
+}
+@media (min-width: 992px) {
+.introSec {
+background: linear-gradient(206deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .7)), #000 url(IMAGEPATH) no-repeat scroll center 100% / cover;
+padding: 136px 0 136px;
+min-height: 635px;
+}
+.homepage-search-widget-cosmos {
+padding: 0;
+}
+.homepage-search-widget-cosmos_expanded {
+padding: 1em 0;
+min-height: 300px;
+}
+.shop-by-vehicle__header {
+text-align: left;
+}
+#shopByVehicleSearchNav {
+margin-left: 0;
+}
+#shopByVehicleSearch{
+min-height: 200px;
+}
+}
+@media (max-width: 991px) {
+.introSec {
+background: linear-gradient(322deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), #000 url(IMAGEPATH?width=1200) no-repeat scroll 65% 50% / cover;
+padding: 45px 0 0;
+}
+.homepage-search-widget-cosmos {
+padding: 0 1em 1em;
+}
+.quicknav-mobile-bar .cta-item {
+border-right: 1px solid rgba(255,255,255,.2);
+display: table;
+width: 100%;
+}
+.quicknav-mobile-bar .cta-item-col:last-child .cta-item {
+border-right: none;
+}
+.quicknav-mobile-bar .cta-item-col .cta-item:hover, .quicknav-mobile-bar .cta-item-col .cta-item:focus, .quicknav-mobile-bar .cta-item-col .cta-item:active {
+background: rgba(0,0,0,.1);
+color:#fff;
+text-decoration: none;
+}
+}
+@media (min-width: 768px) {
+.quicknav-mobile-bar {
+padding-top: 2em;
+padding-bottom: 2em;
+}
+}	@media (max-width: 539px) {
+.quicknav-mobile-bar .cta-item {
+padding-left: 5px;
+padding-right: 5px;
+font-size: 11px;
+}
+}
+</style>
+
+<div class="introSec bg-main border-x">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-lg-5">
+<h2 class="text-center-sm text-center-xs">Welcome to <br> <span class="heading-xl">#NAME#</span></h2>
+<div id="block1">#block1#</div>
+</div>
+</div>
+</div>
+<!-- Desktop Quick Nav Sidebar -->
+<div class="quicknav-sidebar pad-2x bg-cta text-center hidden-sm hidden-xs">
+<h3>Service</h3>
+<hr>
+<div class="pad-vert-1x"></div>
+<div class="cta-wrap">
+<div class="cta-1 pad-horz_5x pad-vert-1x cta-bar-item">
+<a href="/service.aspx" class="text-white" data-dotagging-link-url="/service.aspx" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="0"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Service</strong></p>
+<i class="fa fa-cogs" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+<div class="cta-2 pad-horz_5x pad-vert-1x cta-bar-item">
+<a href="/serviceappmt.aspx" class="text-white" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="1"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Schedule</strong></p>
+<i class="fa fa-calendar" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+<div class="cta-3 pad-horz_5x pad-vert-1x cta-bar-item">
+<a href="/service-parts-specials.html" class="text-white" data-dotagging-link-url="/service-parts-specials.html" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="2"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Specials</strong></p>
+<i class="fa fa-tags" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Mobile Quick Navs -->
+<div class="quicknav-mobile-bar pad-vert-1x bg-cta visible-sm visible-xs">
+<div class="text-center">
+<h3>Service</h3>
+<hr style="width:80px; opacity: .5;">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xs-4 col-sm-4 text-center cta-item-col pad-horz-x">
+<a href="/service.aspx" class="text-white pad-vert-2x cta-item" data-dotagging-link-url="/service.aspx" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="0"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Service</strong></p>
+<i class="fa fa-cogs" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+<div class="col-xs-4 col-sm-4 text-center cta-item-col pad-horz-x">
+<a href="/serviceappmt.aspx" class="text-white pad-vert-2x cta-item" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="1"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Schedule</strong></p>
+<i class="fa fa-calendar" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+<div class="col-xs-4 col-sm-4 text-center cta-item-col pad-horz-x">
+<a href="/service-parts-specials.html" class="text-white pad-vert-2x cta-item" data-dotagging-link-url="/service-parts-specials.html" data-dotagging-event="cta_interaction"
+data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open"
+data-dotagging-element-type="body" data-dotagging-element-order="2"
+data-dotagging-element-subtype="hyperlink">
+<p class="larger text-uppercase"><strong>Specials</strong></p>
+<i class="fa fa-tags" aria-hidden="true" style="font-size:2em;"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
