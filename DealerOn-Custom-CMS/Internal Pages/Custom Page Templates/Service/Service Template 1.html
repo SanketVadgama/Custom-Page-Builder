@@ -1,0 +1,308 @@
+<style>
+.full-width-page #content-description h1 {
+color: #fff;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.service-item-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+.service-item {
+box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+position: relative;
+width: 32%;
+}
+.service-item .service-heading {
+background-color: rgba(33, 33, 33, .75);
+bottom: 0;
+position: absolute;
+width: 100%;
+}
+.section-2 .bg-main {
+background-color: rgba(33, 33, 33, .75);
+}
+.hours-block .fa {
+color: var(--cta-background-color);
+}
+.hours-block tbody {
+width: 100%;
+}
+.hours-block tbody {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+.hours-block .table tr {
+border: 2px solid rgba(0, 0, 0, .05);
+padding: 5px;
+}
+.hours-block .table tr:last-of-type {
+display: none;
+}
+.hours-block .table>tbody>tr>td {
+border-top: 0;
+}
+.hours-block .table>tbody>tr>td:first-of-type {
+padding-bottom: 0;
+text-transform: uppercase;
+}
+#tbl_con_Sales {
+margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+.full-width-page #content-description h1 {
+font-size: 46px;
+width: 1170px;
+}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+.full-width-page #content-description h1 {
+width: 970px;
+}
+.service-item .img-background {
+padding-top: 350px !important;
+}
+}
+@media (min-width: 992px) {
+.full-width-page #content-description {
+background: linear-gradient(175deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), #000 url('IMAGE_SOURCE') no-repeat scroll center / cover;
+padding: 135px 0 45px;
+}
+.section-2 {
+background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), #212121 url('IMAGE_SOURCE') no-repeat scroll center / cover;
+}
+#tbl_con_Sales {
+font-size: 13px;
+}
+.hours-block .table tr {
+width: 13%;
+}
+}
+@media (max-width: 991px) {
+.full-width-page #content-description {
+background: linear-gradient(175deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), #000 url('IMAGE_SOURCE?width=1200') no-repeat scroll center / cover;
+padding: 75px 0 25px;
+}
+.section-2 {
+background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), #212121 url('IMAGE_SOURCE?width=991') no-repeat scroll center / cover;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.full-width-page #content-description h1 {
+width: 750px;
+}
+.service-item .img-background {
+padding-top: 200px !important;
+}
+}
+@media (max-width: 991px) and (min-width: 540px) {
+.hours-block .table tr {
+flex: 1 20%;
+margin: 5px;
+}
+}
+@media (max-width: 767px) {
+.section {
+padding: 35px 0;
+}
+.service-item {
+margin: 5px 0;
+width: 100%;
+}
+.service-item .img-background {
+padding-top: 100px !important;
+}
+}
+@media (min-width: 540px) {
+.section-2 ul>li {
+display: flex;
+align-items: center;
+}
+.hours-block .table tr>td {
+display: block;
+}
+}
+@media (max-width: 539px) {
+.section-2 img {
+margin: auto;
+}
+.hours-block .table tr {
+display: table;
+margin: 5px 0;
+width: 100%;
+}
+.hours-block .table>tbody>tr>td {
+padding: 10px;
+width: 50%;
+}
+}
+</style>
+
+<div class="section section-1 pad-vert-4x">
+<div class="container">
+<h2 class="h1 margin-x text-center">HEADING</h2>
+<p class="lead margin-x text-center">
+Enter your main service description here
+</p>
+<div class="row margin-top-3x">
+<div class="col-md-5">
+<p>
+Enter your first paragraph content
+</p>
+<p>
+Enter your second paragraph content
+</p>
+<a class="btn btn-cta btn-lg margin-top-1x" href="/serviceappmt.aspx" data-dotagging-event="cta_interaction" data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open" data-dotagging-element-type="body" data-dotagging-element-order="0" data-dotagging-element-subtype="cta_button" aria-label="Schedule your service appointment">
+Schedule Service
+</a>
+</div>
+<div class="pad-vert-1x visible-xs visible-sm"></div>
+<div class="col-md-7">
+<div class="service-item-container">
+<a class="service-item service-item-1" href="/serviceappmt.aspx" data-dotagging-event="media_interaction" data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open" data-dotagging-element-type="body" data-dotagging-element-text="Schedule Service" data-dotagging-element-order="0" data-dotagging-element-subtype="image">
+<div role="img" aria-label="Service technician working under the hood of a car" style="background-image: url('#SHAREDPATH#CustomHTMLFiles/custom_page_templates/small-images/technician-working-under-hood.jpg'); padding-top: 150%;" class="img-background img-cover">
+</div>
+<div class="service-heading bg-main pad-1x">
+<h4 class="margin-x text-white">
+Schedule Service <i class="fa fa-angle-right margin-left_5x text-cta hidden-md"></i>
+</h4>
+</div>
+</a>
+<a class="service-item service-item-2" href="/service-parts-specials.aspx" data-dotagging-event="media_interaction" data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open" data-dotagging-element-type="body" data-dotagging-element-text="Service Specials" data-dotagging-element-order="1" data-dotagging-element-subtype="image">
+<div role="img" aria-label="Changing the oil" style="background-image: url('#SHAREDPATH#CustomHTMLFiles/custom_page_templates/small-images/filling-oil-tank.jpg'); padding-top: 150%;" class="img-background img-cover">
+</div>
+<div class="service-heading bg-main pad-1x">
+<h4 class="margin-x text-white">
+Service Specials <i class="fa fa-angle-right margin-left_5x text-cta hidden-md"></i>
+</h4>
+</div>
+</a>
+<a class="service-item service-item-3" href="/orderparts.aspx" data-dotagging-event="media_interaction" data-dotagging-product-name="Website|Custom Content" data-dotagging-event-action-result="open" data-dotagging-element-type="body" data-dotagging-element-text="Search Parts" data-dotagging-element-order="2" data-dotagging-element-subtype="image">
+<div role="img" aria-label="Technician fixing a part with a screwdriver" style="background-image: url('#SHAREDPATH#CustomHTMLFiles/custom_page_templates/small-images/technician-with-screwdriver.jpg'); padding-top: 150%;" class="img-background img-cover">
+</div>
+<div class="service-heading bg-main pad-1x">
+<h4 class="margin-x text-white">
+Search Parts <i class="fa fa-angle-right margin-left_5x text-cta hidden-md"></i>
+</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section section-2 bg-alt3 border-x pad-vert-4x text-white">
+<div class="container">
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+<h2 class="heading-lg margin-top-x text-center">HEADING</h2>
+<p class="larger text-center">Enter your main service description here</p>
+</div>
+</div>
+<div class="bg-main margin-top-2x pad-2x">
+<div class="row text-center-xxs">
+<!-- First Service Column -->
+<div class="col-xxs-12 col-xs-4">
+<ul class="service-list service-list-1 larger list-pad-bottom-1x list-unstyled margin-bottom-x">
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-breaks.png" alt="Brake Icon" class="img-responsive margin-right_5x">
+Brake Repair
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-engine.png" alt="Engine Alert Icon" class="img-responsive margin-right_5x">
+Engine Diagnostic
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-tuneup.png" alt="Car Lift Icon" class="img-responsive margin-right_5x">
+Tune-Up
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-belts.png" alt="Engine Belt Icon" class="img-responsive margin-right_5x">
+Belts, Hoses, Fluids
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-air.png" alt="Air Filter Icon" class="img-responsive margin-right_5x">
+Air Filters
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-alternators.png" alt="Alternator Icon" class="img-responsive margin-right_5x">
+Alternators
+</li>
+</ul>
+</div>
+<!-- Second Service Column -->
+<div class="col-xxs-12 col-xs-4">
+<ul class="service-list service-list-2 larger list-pad-bottom-1x list-unstyled margin-bottom-x">
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-batteries.png" alt="Car Battery Icon" class="img-responsive margin-right_5x">
+Batteries
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-headlights.png" alt="Headlight Icon" class="img-responsive margin-right_5x">
+Headlights
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-starters.png" alt="Key Icon" class="img-responsive margin-right_5x">
+Starters
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-transmission.png" alt="Gear Shift Icon" class="img-responsive margin-right_5x">
+Transmission Services
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-struts.png" alt="Strut Icon" class="img-responsive margin-right_5x">
+Struts
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-fluids.png" alt="Fluid Bottle Icon" class="img-responsive margin-right_5x">
+All Fluid Level Checks &amp; Corrections
+</li>
+</ul>
+</div>
+<!-- Third Service Column -->
+<div class="col-xxs-12 col-xs-4">
+<ul class="service-list service-list-3 larger list-pad-bottom-1x list-unstyled margin-bottom-x">
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-general.png" alt="Gears Icon" class="img-responsive margin-right_5x">
+General Automotive Repair
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-preventative.png" alt="Gear Icon" class="img-responsive margin-right_5x">
+Preventative Car Maintenance
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-ac.png" alt="Snowflake Icon" class="img-responsive margin-right_5x">
+Air Conditioning and Heater Service
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-cooling.png" alt="Fan Icon" class="img-responsive margin-right_5x">
+Cooling System and Radiator Repair
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-synthetic.png" alt="Oil Can Icon" class="img-responsive margin-right_5x">
+Synthetic Motor Oil Replacement
+</li>
+<li>
+<img src="#SHAREDPATH#CustomHTMLFiles/custom_page_templates/icons/service-icon-oil.png" alt="Funnel Icon" class="img-responsive margin-right_5x">
+Oil Filter Replacement
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section section-3 pad-vert-4x">
+<div class="container">
+<div class="hours-block margin-bottom-2x">
+<h4 class="heading-regular margin-top-x">Sales Hours</h4>
+#SALESHOURS|CONDENSED|NOTITLE#
+</div>
+<div class="map-block">
+#GMAP|350#
+</div>
+</div>
+</div>
