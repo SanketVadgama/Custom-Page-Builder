@@ -1,0 +1,40 @@
+<style>
+.aboutus-overlay-block { justify-content: space-around; }
+.aboutus-overlay-item { overflow: hidden; position: relative; }
+@media (min-width: 1200px) {
+.aboutus-overlay-img { width: 75%; }
+.aboutus-overlay-text { width: 25%; }
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+.aboutus-overlay-img { width: 65%; }
+.aboutus-overlay-text { width: 35%; }
+}
+@media (min-width: 992px) {
+.aboutus-overlay-text { top: -75px; }
+}
+@media (min-width: 768px) {
+.aboutus-overlay-text { z-index: 1; left: -45px; }
+.aboutus-overlay-img { right: -75px; }
+}
+@media (max-width: 767px) {
+.aboutus-overlay-item { width: 100%; }
+}
+</style>
+
+<div class="aboutus-overlay-block flex-center-all flex-wrap">
+<div class="aboutus-overlay-item aboutus-overlay-img">
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lot-bg.jpg'); padding-top: 575px;" class="img-background img-cover visible-md visible-lg"></div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lot-bg.jpg?width=991'); padding-top: 475px;" class="img-background img-cover visible-sm"></div>
+<div role="img" aria-label="#NAME#" style="background-image: url('/static/industry-automotive/lot-bg.jpg?width=767'); padding-top: 225px;" class="img-background img-cover visible-xs"></div>
+</div>
+<div class="aboutus-overlay-item aboutus-overlay-text">
+<div class="pad-vert-1x visible-xs"></div>
+<a data-dotagging-element-subtype="hyperlink" data-dotagging-element-type="body" data-dotagging-event="cta_interaction" data-dotagging-event-action-result="open" data-dotagging-link-url="/aboutus.aspx" data-dotagging-product-name="Website|Custom Content" href="/aboutus.aspx" class="stat-text-link" data-loc="#NAME#">
+<div class="bg-main pad-3x">
+<h1 class="h3 margin-top-x">#NAME# in #CITY#, #STATE#</h1>
+<p class="margin-bottom-2x">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Elit sit ridiculus tempor mus odio etiam fames viverra bibendum taciti. Nec parturient sit ante. Sociosqu facilisi lacus augue taciti porta orci potenti.</p>
+<p class="h5 margin-bottom-x text-cta text-uppercase">More About Us</p>
+</div>
+</a>
+</div>
+</div>
