@@ -1,0 +1,329 @@
+<style>
+#fancy-banner__left .pulse-button {
+border: 4px solid #000;
+box-shadow: 0 0 0 0 #000;
+}
+.pulse-button {
+position: relative;
+font-size: 26px;
+margin-top: 1em;
+width: 60px;
+height: 60px;
+line-height: 1;
+border: 4px solid #fff;
+box-shadow: 0 0 0 0 #efefef;
+border-radius: 50%;
+background-color: transparent;
+cursor: pointer;
+-webkit-animation: pulse 2s infinite cubic-bezier(255, 255, 255, 1);
+-moz-animation: pulse 2s infinite cubic-bezier(255, 255, 255, 1);
+animation: pulse 2s infinite cubic-bezier(255, 255, 255, 1);
+}
+@-webkit-keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+@-moz-keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+@keyframes pulse {
+to {
+box-shadow: 0 0 0 10px rgba(215, 25, 32, 0);
+}
+}
+.fancy-banner {
+overflow: hidden;
+}
+.fancy-banner__right .fancy-banner__inner {
+transition: transform 0.8s;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/industry-automotive/hero/lot/lot-hero.jpg) center center/cover no-repeat;
+}
+.fancy-banner__outer .fancy-banner__inner {
+text-align: center;
+padding: 25px 15px;
+}
+@media only screen and (min-width: 1200px) {
+#homepageSearchWidgetCosmos {
+min-height: 225px;
+position: relative;
+}
+.action-hide {
+opacity: 0;
+}
+.fancy-banner__container {
+position: relative;
+overflow-x: hidden;
+height: 580px;
+}
+.fancy-banner__container .overlay {
+background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.88) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ffffff', endColorstr='#e0ffffff', GradientType=1);
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+.fancy-banner__outer {
+position: absolute;
+width: 85%;
+height: 100%;
+overflow: hidden;
+transition: transform 0.8s;
+}
+.fancy-banner__outer .fancy-banner__inner {
+height: inherit;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #000;
+}
+.fancy-banner__inner:before,
+.fancy-banner__inner:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+z-index: 1;
+pointer-events: none;
+}
+.fancy-banner__content {
+width: 65%;
+}
+.fancy-banner__content-expanded {
+width: 70%;
+color: #000;
+}
+.fancy-banner__right .fancy-banner__content-expanded {
+margin-left: 10%;
+padding-top: 20px;
+}
+.fancy-banner__content-expanded .title {
+font-weight: 700;
+}
+.fancy-banner__inner .title.heading-xl {
+font-size: 55px;
+}
+#fancy-banner__right .fancy-banner__content {
+position: absolute;
+top: 32%;
+}
+.fancy-banner__content,
+.fancy-banner__content-expanded {
+z-index: 1;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+.fancy-banner__right .fancy-banner__content {
+left: 26%;
+}
+.fancy-banner__right.collapsed .fancy-banner__content {
+left: 16%;
+}
+.fancy-banner__left {
+top: 0;
+left: -10%;
+z-index: 0;
+}
+.fancy-banner__left:hover .fancy-banner__inner {
+transition: all 0.8s;
+}
+.fancy-banner__left.collapsed .fancy-banner__inner .fancy-banner__content {
+left: 50%;
+}
+.fancy-banner__right .fancy-banner__inner .fancy-banner__content-expanded {
+transition: all 0.8s;
+}
+.fancy-banner__left:hover .fancy-banner__inner .fancy-banner__content {
+transition: all 0.8s;
+}
+.fancy-banner__left:hover .fancy-banner__inner:before {
+opacity: 1;
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content,
+.fancy-banner__left .fancy-banner__content .inventory-expanded-content {
+transition: all 0.8s;
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content {
+position: absolute;
+top: 50%;
+transform: translate(-45%,-50%);
+left: 25%;
+}
+.fancy-banner__left .fancy-banner__content .inventory-expanded-content.action-hide {
+transform: translateX(-35%);
+}
+.fancy-banner__left .fancy-banner__content .inventory-collapsed-content.action-hide {
+position: absolute;
+top: 50%;
+transform: translate(0,-50%);
+}
+.fancy-banner__right {
+top: 0;
+right: -27%;
+z-index: 1;
+transform: skewX(-10deg) translateX(-15%);
+-moz-transform: skewX(-10deg) translateX(-15%);
+-webkit-transform: skewX(-10deg) translateX(-15%);
+transform-origin: top left;
+}
+.fancy-banner__right .fancy-banner__inner {
+transform: skewX(10deg) translateX(-15%);
+-webkit-transform: skewX(10deg) translateX(-15%);
+-moz-transform: skewX(10deg) translateX(-15%);
+transform-origin: top left;
+}
+.fancy-banner__right:hover .fancy-banner__inner:before {
+opacity: 1;
+}
+.fancy-banner__right.collapsed {
+transform: skewX(-10deg) translateX(38%);
+-webkit-transform: skewX(-10deg) translateX(38%);
+-moz-transform: skewX(-10deg) translateX(38%);
+transform-origin: top left;
+}
+.fancy-banner__right.collapsed .fancy-banner__inner {
+transform: skewX(10deg) translateX(-35%);
+-webkit-transform: skewX(10deg) translateX(-35%);
+-moz-transform: skewX(10deg) translateX(-35%);
+transform-origin: top left;
+}
+.fancy-banner__right.collapsed .fancy-banner__inner:after {
+opacity: 1;
+}
+}
+@media only screen and (max-width: 1199px) {
+.fancy-banner__right .fancy-banner__inner {
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/static/industry-automotive/hero/lot/lot-hero.jpg?width=990) center center/cover no-repeat;
+}
+}
+@media only screen and (min-width: 768px) {
+.fancy-banner__left .fancy-banner__inner {
+transition: all 0.8s;
+background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/static/industry-automotive/hero/service-parts/hero-engine.jpg) center center/cover no-repeat;
+color: #000;
+}
+}
+@media only screen and (max-width: 767px) {
+.fancy-banner__left .fancy-banner__inner {
+transition: all 0.8s;
+background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/static/industry-automotive/hero/service-parts/hero-engine.jpg?width=900) center center/cover no-repeat;
+color: #000;
+}
+.pulse-button i {
+position: absolute;
+left: 0;
+right: 0;
+top: 14px;
+bottom: 0;
+}
+}
+</style>
+
+<section class="fancy-banner bg-main border-x clearfix">
+<div class="fancy-banner__container">
+<div class="overlay"></div>
+<div id="fancy-banner__left" class="fancy-banner__outer fancy-banner__left">
+<div class="fancy-banner__inner">
+<div class="fancy-banner__content">
+<div class="inventory-collapsed-content action-hide">
+<div class="visible-lg visible-xl">
+<h2 class="heading-xl text-uppercase text-main">Service</h2>
+<button class="pulse-button text-main" type="button">
+<i class="fa fa-plus" aria-hidden="true"></i><span class="sr-only">More</span>
+</button>
+</div>
+<div class="visible-md visible-sm visible-xs pad-vert-2x">
+<p class="h2 title margin-top-x">Schedule Service</p>
+<a class="btn btn-cta btn-lg margin-top-1x" href="/serviceappmt.aspx" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-element-subtype="cta_button" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-event="cta_interaction"><i class="fa fa-calendar pad-right_5x"></i> Schedule Now</a>
+</div>
+</div>
+<div class="inventory-expanded-content pad-vert-1x visible-lg visible-xl">
+<h2 class="title heading-lg text-uppercase">Service</h2>
+<div class="row margin-bottom-2x">
+<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+<p class="larger margin-vert_5x">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Elit sit ridiculus tempor mus odio etiam fames viverra bibendum taciti. Nec parturient sit ante. Sociosqu facilisi lacus augue taciti porta orci potenti.</p>
+</div>
+</div>
+<div class="flex-all flex-wrap row text-center">
+<div class="col-sm-4">
+<a class="quick-item" href="/service.aspx" onclick="DealerOnTrack.event('cta','click',window.location.href)" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/service.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="quick-inner bg-alt1 pad-1x">
+<h3 class="h2 margin-vert-x text-default">Service</h3>
+<p class="text-default">Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+<span class="btn btn-cta margin-top_5x">Learn More</span>
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a class="quick-item" href="/serviceappmt.aspx" target="_blank" onclick="DealerOnTrack.event('cta','click',window.location.href)" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/serviceappmt.aspx" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="quick-inner bg-cta pad-1x">
+<h3 class="h2 margin-vert-x">Schedule</h3>
+<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+<span class="btn btn-alt1 margin-top_5x">Learn More</span>
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a class="quick-item" href="/service-parts-specials.html" onclick="DealerOnTrack.event('cta','click',window.location.href)" data-dotagging-product-name="Website|Custom Content" data-dotagging-element-type="body" data-dotagging-event-action-result="open" data-dotagging-link-url="/service-parts-specials.html" data-dotagging-element-subtype="hyperlink" data-dotagging-event="cta_interaction">
+<div class="quick-inner bg-alt1 pad-1x">
+<h3 class="h2 margin-vert-x text-default">Specials</h3>
+<p class="text-default">Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+<span class="btn btn-cta margin-top_5x">Learn More</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fancy-banner__right" class="fancy-banner__outer fancy-banner__right collapsed">
+<div class=" fancy-banner__inner">
+<div class="fancy-banner__content hidden-md hidden-sm hidden-xs">
+<h2 class="heading-xl text-uppercase text-white">Inventory</h2>
+<button class="pulse-button text-white" type="button">
+<i class="fa fa-plus" aria-hidden="true"></i><span class="sr-only">More</span>
+</button>
+</div>
+<div class="fancy-banner__content-expanded action-hide">
+<h2 class="heading-xl margin-x text-uppercase text-white">Inventory</h2>
+<h3 class="margin-top-x text-uppercase text-white">Search</h3>
+<div id="block1">
+#block1#
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+function collapseLeft() {
+document.getElementById('fancy-banner__right').classList.remove('collapsed')
+document.querySelector('#fancy-banner__right .fancy-banner__content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__right .fancy-banner__content-expanded').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-collapsed-content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-expanded-content').classList.toggle('action-hide')
+$('#fancy-banner__left .horizontalInventorySearch select').hide();
+}
+function resetLeft() {
+document.getElementById('fancy-banner__right').classList.add('collapsed')
+document.querySelector('#fancy-banner__right.collapsed .fancy-banner__content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__right.collapsed .fancy-banner__content-expanded').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-collapsed-content').classList.toggle('action-hide')
+document.querySelector('#fancy-banner__left .fancy-banner__content .inventory-expanded-content').classList.toggle('action-hide')
+$('#fancy-banner__left .horizontalInventorySearch select').show();
+}
+document.getElementById('fancy-banner__right').addEventListener('mouseenter', collapseLeft)
+document.getElementById('fancy-banner__right').addEventListener('mouseleave', resetLeft)
+</script>
